@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EB6C3B01-930E-F02C-B9CF-620156FC4070" name="PA_Historico_Status_PA_Usuario_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:01:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<containerWithKeyObject>2FC03920-00B9-6A84-61C6-ADAA4D4E9CCE</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>B61F4AE0-BE26-62AF-818B-80EDFEF0FFAB</localFKIndex>
+<keyObject>F9751F72-58B3-A350-289C-B0D0E6F175C1</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

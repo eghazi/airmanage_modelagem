@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B01F2F4-DE47-1AF8-41B7-5719776E8FAC" name="CK_CheckList">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:07:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_CheckList" id="D67566EE-CE17-65F4-5753-6813789EEA29">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:07:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="90ED425F-3CE8-5D0A-2689-F1D49C0EB6E4">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:07:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_CheckList</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_CheckList</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Usuario" id="DCACC587-2981-455C-4F6D-0DE7F61A382A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:36:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6CE753A3-B573-5512-37E4-08FE2652D127</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E10BCB12-E47E-9603-A327-F2725CC94BC9" referredColumn="6CE753A3-B573-5512-37E4-08FE2652D127"/>
+</associations>
+</Column>
+<Column name="dDataCadastro" id="BC2DD317-F502-F9FB-8797-84F6C98FF79C">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:37:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataInicio" id="32BCB072-82D8-B7FB-B779-1715B808BFF0">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:37:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataFm" id="4FE48C8A-0A4C-B5E0-7C8F-9C76FC0403C8">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:37:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E33D8E59-33AC-F373-1800-47C21E3611A5" name="CK_CheckList_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:07:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D67566EE-CE17-65F4-5753-6813789EEA29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6B7AAA3-D372-1CBB-842E-78F856366EF5" name="CK_CheckList_PA_Usuario_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:36:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCACC587-2981-455C-4F6D-0DE7F61A382A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

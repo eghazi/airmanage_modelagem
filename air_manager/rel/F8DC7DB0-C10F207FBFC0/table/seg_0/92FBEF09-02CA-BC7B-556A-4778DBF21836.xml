@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92FBEF09-02CA-BC7B-556A-4778DBF21836" name="PA_Menu">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:59:02 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Menu" id="5CBC6814-E131-9EF3-EBCB-ACED419DFA85">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:59:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="53C40AA9-728F-703B-5DB7-0341B60B5594">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:59:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Tela</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Modulo" id="E2F6027B-8463-9217-DE01-D482A42A80C9">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:24:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8290B55C-F576-A0F2-81CD-02206D7F0FE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F11AE0EF-7EB1-F59C-61E9-B7098E8D5559" referredColumn="8290B55C-F576-A0F2-81CD-02206D7F0FE7"/>
+</associations>
+</Column>
+<Column name="FK_id_Tela" id="AF1D7BD5-E9A4-2213-848A-9E4032018A98">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:25:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>38F83A2F-8EFF-C7C9-8899-0CFA1BD08ED1</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74C5542C-104C-62B5-1BA9-0EC639F1BC54" referredColumn="38F83A2F-8EFF-C7C9-8899-0CFA1BD08ED1"/>
+</associations>
+</Column>
+<Column name="sNomeMenu" id="118553EE-7E24-C949-438A-4B9C2DD9A97E">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:26:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sDescricaoMenu" id="E361E3E7-427A-DEC2-81F7-BD72BBFDC277">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:27:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F296B4F-C66B-819E-8C8E-37A8A9EBB3CE" name="PA_Menu_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:59:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CBC6814-E131-9EF3-EBCB-ACED419DFA85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F21F2C9-DAC9-2B9E-8655-41CB1A48656C" name="PA_Menu__UN">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:28:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53C40AA9-728F-703B-5DB7-0341B60B5594"/>
+<colUsage columnID="E2F6027B-8463-9217-DE01-D482A42A80C9"/>
+<colUsage columnID="AF1D7BD5-E9A4-2213-848A-9E4032018A98"/>
+<colUsage columnID="118553EE-7E24-C949-438A-4B9C2DD9A97E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAD47DAE-BC55-3261-9BDC-10A3DF6CCC05" name="PA_Menu_PA_Modulo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:24:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F6027B-8463-9217-DE01-D482A42A80C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="609B5A17-BE89-47C6-E7DD-A1A787BD5964" name="PA_Menu_PA_Tela_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:25:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF1D7BD5-E9A4-2213-848A-9E4032018A98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

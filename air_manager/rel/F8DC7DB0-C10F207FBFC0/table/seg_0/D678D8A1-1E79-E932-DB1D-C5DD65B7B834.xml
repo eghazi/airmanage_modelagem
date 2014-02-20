@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D678D8A1-1E79-E932-DB1D-C5DD65B7B834" name="PA_Tela">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:57:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Tela" id="38F83A2F-8EFF-C7C9-8899-0CFA1BD08ED1">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:58:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="E1821EC2-34F9-A43A-0A7C-83240433F416">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:58:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Tela</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Modulo" id="7AAF0052-575A-7E6E-A8A0-48AFA8AC7BA6">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 15:34:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8290B55C-F576-A0F2-81CD-02206D7F0FE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="028E6229-42F1-C9ED-874E-A5AD228E5335" referredColumn="8290B55C-F576-A0F2-81CD-02206D7F0FE7"/>
+</associations>
+</Column>
+<Column name="sNome" id="713CD3C4-AEB6-D3F6-5E3D-66FF2E0852D1">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:32:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sDescricao" id="CD6CDF08-57B7-A085-C886-94DC940B00A4">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:32:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E43DB27A-5A57-F712-298B-E36FDA97D973" name="PA_Tela_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:58:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38F83A2F-8EFF-C7C9-8899-0CFA1BD08ED1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5969A79A-B3E0-E638-1BEE-C123D911D709" name="PA_Tela__UN">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:32:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1821EC2-34F9-A43A-0A7C-83240433F416"/>
+<colUsage columnID="7AAF0052-575A-7E6E-A8A0-48AFA8AC7BA6"/>
+<colUsage columnID="713CD3C4-AEB6-D3F6-5E3D-66FF2E0852D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36156450-D866-D986-9118-CD909EB1B04D" name="PA_Tela_PA_Modulo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 15:34:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AAF0052-575A-7E6E-A8A0-48AFA8AC7BA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

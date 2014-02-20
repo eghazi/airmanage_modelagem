@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE6F7A32-E59D-D627-3C5D-333EA2AC13E7" name="CA_Logradouro">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:59:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Logradouro" id="153B3BB5-A4C0-2C10-FDF9-7E66ABA9F24D">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:01:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="607812E6-E21C-AB3B-FD91-B80DD96DBE2B">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:01:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Logradouro</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Bairros" id="E23B3012-004B-8214-BCBC-77A9BD3B8A3D">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:02:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A4484A32-D8C7-9D58-29DB-CAE01A2EC00C</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F549459-BC82-44BC-F02B-CB914D07215B" referredColumn="A4484A32-D8C7-9D58-29DB-CAE01A2EC00C"/>
+</associations>
+</Column>
+<Column name="sNome" id="BD015CF5-E4C5-2B0D-D483-97075E7F7B91">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:01:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sCep" id="1C2DFEE4-26E3-E166-4AA4-F61DA40E6069">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:01:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF453A93-EE4D-06C8-9B06-20B93FC01140" name="CA_Logradouro_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:01:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="153B3BB5-A4C0-2C10-FDF9-7E66ABA9F24D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF7E73F9-5F4C-0535-5860-532680685461" name="CA_Logradouro_CA_Bairros_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:02:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E23B3012-004B-8214-BCBC-77A9BD3B8A3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

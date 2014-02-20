@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="679A55B2-CE4B-CD3F-A6BF-55CA000D5B75" name="RH_Pessoa">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:49:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pessoa" id="A5BE4DBD-FE2F-81A4-9E7D-ACBDEEEA6052">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:51:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_Pessoa" id="C4524739-B238-E69A-89B5-66607820138F">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 13:02:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Logradouro" id="897CBC6D-A20E-782E-BA87-5BE945B4177A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:00:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>153B3BB5-A4C0-2C10-FDF9-7E66ABA9F24D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="280E8F8B-15E4-C08E-6209-B2128477FE92" referredColumn="153B3BB5-A4C0-2C10-FDF9-7E66ABA9F24D"/>
+</associations>
+</Column>
+<Column name="sNome" id="6D4B168A-B74F-2372-74E2-61D6191C6B1B">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:00:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataNascimento" id="3288011F-5B32-022C-5C18-B3CF976E879E">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:01:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataCadastro" id="E540BB15-A264-7FB9-8EE2-F8A8A65EF31F">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:01:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2616DEEF-4FF6-A227-5862-D46A34BA5E7E" name="RH_Pessoa_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:51:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5BE4DBD-FE2F-81A4-9E7D-ACBDEEEA6052"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A74D3075-2728-A781-5FB9-54D61E87B81E" name="RH_Pessoa_CA_Logradouro_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:00:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="897CBC6D-A20E-782E-BA87-5BE945B4177A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

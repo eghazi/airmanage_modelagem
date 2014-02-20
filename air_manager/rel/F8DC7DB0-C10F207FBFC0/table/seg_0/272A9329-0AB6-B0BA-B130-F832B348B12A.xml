@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="272A9329-0AB6-B0BA-B130-F832B348B12A" name="CA_Empresa">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:56:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empresa" id="D78B1C53-9029-AAC8-BAFC-ABC862AACBD4">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:57:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="3771F12D-DDC0-3F58-328D-8F425E63C088">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 13:00:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Empresa</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Empresa_Tipo" id="8B7D5638-B403-04E1-A224-D6FAFF1878C5">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 18:47:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9D7AC177-E8AB-B702-BFD2-6A2FB2CC6C90</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3704BB3E-4260-08A5-90E1-3BF0FE2361D0" referredColumn="9D7AC177-E8AB-B702-BFD2-6A2FB2CC6C90"/>
+</associations>
+</Column>
+<Column name="FK_id_Empresa_Plano" id="B4751FE5-4F8F-E894-687B-4AC8D0FFF79E">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 18:48:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>2ED31685-D824-7F06-0CFE-D4BDE6DDB20E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDB497FA-4D21-1673-F972-14F5368ECFFC" referredColumn="2ED31685-D824-7F06-0CFE-D4BDE6DDB20E"/>
+</associations>
+</Column>
+<Column name="sNome" id="211C562F-CF07-A5B2-8375-F12E0F67D110">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:43:50 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataCadastro" id="EA0F5BA9-CAC3-E6E1-CEAE-897540EC0DEC">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:44:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iAtivo" id="595B98D3-F060-A297-5C51-601D710284B8">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:44:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataFim" id="F5C477E2-486D-AE00-5DC5-88A170098A11">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:44:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FK_id_Logradouro" id="7EE883D9-2E14-73D3-26A1-3DA920F2755F">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:02:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>153B3BB5-A4C0-2C10-FDF9-7E66ABA9F24D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4343D71-C727-144F-1838-B05CAF83D38A" referredColumn="153B3BB5-A4C0-2C10-FDF9-7E66ABA9F24D"/>
+</associations>
+</Column>
+<Column name="sComplemento" id="5368C558-0E44-D8D5-0183-2D18978BE7A2">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 15:52:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC9BBC5A-6411-B976-D919-CC25EA3C0441" name="CA_Empresa_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:57:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D78B1C53-9029-AAC8-BAFC-ABC862AACBD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40972A74-540D-E916-B731-97E4EC93C5A5" name="CA_Empresa_CA_Empresa_Tipo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 18:47:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B7D5638-B403-04E1-A224-D6FAFF1878C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FE844D8-542B-B75A-BF59-D0AB4EC38635" name="CA_Empresa_CA_Empresa_Plano_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 18:48:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4751FE5-4F8F-E894-687B-4AC8D0FFF79E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E085CB5-2BBA-771C-F722-2CE55C17555E" name="CA_Empresa_CA_Logradouro_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 20:02:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE883D9-2E14-73D3-26A1-3DA920F2755F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

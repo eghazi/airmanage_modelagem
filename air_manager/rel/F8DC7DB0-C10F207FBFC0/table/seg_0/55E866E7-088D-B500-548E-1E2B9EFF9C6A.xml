@@ -1,0 +1,252 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55E866E7-088D-B500-548E-1E2B9EFF9C6A" name="PA_Acesso">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:03:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Acesso" id="DAC755AB-9E42-C6CC-2FD6-2A3C87D58D69">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:03:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="87D39B9D-B75D-F7CE-6588-AD3FAA8AD3B8">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:04:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Acesso</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Modulo" id="5AA652FE-0B25-CF9D-3428-364A7CE94417">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:38:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8290B55C-F576-A0F2-81CD-02206D7F0FE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58928E9C-7A41-2EC1-46FF-36C73623D9FE" referredColumn="8290B55C-F576-A0F2-81CD-02206D7F0FE7"/>
+</associations>
+</Column>
+<Column name="FK_id_Menu" id="7E28EB6E-44A9-E47C-9611-91F552635B85">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:29:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5CBC6814-E131-9EF3-EBCB-ACED419DFA85</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2637B660-904B-A88E-F566-A94C9B802E13" referredColumn="5CBC6814-E131-9EF3-EBCB-ACED419DFA85"/>
+</associations>
+</Column>
+<Column name="FK_id_Tela" id="D2908F7F-190D-08CD-CCF2-E31FC786E481">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:39:31 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>38F83A2F-8EFF-C7C9-8899-0CFA1BD08ED1</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EFB989C-7EA2-2956-AF3F-9DB8A68E4E5E" referredColumn="38F83A2F-8EFF-C7C9-8899-0CFA1BD08ED1"/>
+</associations>
+</Column>
+<Column name="FK_id_Componente" id="8A0D36AF-8F87-E7F8-C901-110622075E65">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:23:34 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1D92B63E-3F11-C909-D329-B5822F615CCB</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B31F614-4914-39B8-9846-EFEEA7231217" referredColumn="1D92B63E-3F11-C909-D329-B5822F615CCB"/>
+</associations>
+</Column>
+<Column name="FK_id_Permissao" id="061CC06E-737C-CDBF-3132-530921DD90F7">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:04:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>BE24608B-F79E-9253-2EDF-897FAB2408FA</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="776BED06-3DED-3A72-CB91-25E41EA18838" referredColumn="BE24608B-F79E-9253-2EDF-897FAB2408FA"/>
+</associations>
+</Column>
+<Column name="FK_id_Usuario" id="315324E7-CD2D-FA12-2083-42A3D64B9543">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:04:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6CE753A3-B573-5512-37E4-08FE2652D127</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1159DEA3-1BFB-5ACC-05B5-F128A4B65F09" referredColumn="6CE753A3-B573-5512-37E4-08FE2652D127"/>
+</associations>
+</Column>
+<Column name="dDataInicio" id="1EFCE489-038C-E631-D23B-DEA81877EA5D">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:40:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataFim" id="42511C2C-683A-765C-B749-83BF80B0C93A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:40:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C78D909A-BEB3-AE45-3F0F-B381AF9839FC" name="PA_Acesso_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:03:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAC755AB-9E42-C6CC-2FD6-2A3C87D58D69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEBF5956-35AD-4BEB-0C74-3E04838B0224" name="PA_Acesso__UN">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:40:50 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AA652FE-0B25-CF9D-3428-364A7CE94417"/>
+<colUsage columnID="7E28EB6E-44A9-E47C-9611-91F552635B85"/>
+<colUsage columnID="D2908F7F-190D-08CD-CCF2-E31FC786E481"/>
+<colUsage columnID="8A0D36AF-8F87-E7F8-C901-110622075E65"/>
+<colUsage columnID="061CC06E-737C-CDBF-3132-530921DD90F7"/>
+<colUsage columnID="315324E7-CD2D-FA12-2083-42A3D64B9543"/>
+<colUsage columnID="1EFCE489-038C-E631-D23B-DEA81877EA5D"/>
+<colUsage columnID="42511C2C-683A-765C-B749-83BF80B0C93A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10F892D5-52DB-8E51-CFF0-54DF02634666" name="PA_Acesso_PA_Usuario_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:04:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="315324E7-CD2D-FA12-2083-42A3D64B9543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E480C543-DBFE-B6DB-253E-8238861112E7" name="PA_Acesso_PA_Permissao_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:04:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="061CC06E-737C-CDBF-3132-530921DD90F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="497BAB93-845A-3702-EF6F-9C220A370994" name="PA_Acesso_PA_Componente_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:23:34 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A0D36AF-8F87-E7F8-C901-110622075E65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D990563-C051-3FBE-F141-698F63F3FFF0" name="PA_Acesso_PA_Menu_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:29:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E28EB6E-44A9-E47C-9611-91F552635B85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53EA2E3A-AFB5-F7E5-7C8B-41F1EE3F5477" name="PA_Acesso_PA_Modulo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:38:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AA652FE-0B25-CF9D-3428-364A7CE94417"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5BD2D9E-DCC0-37A4-63BE-80358BDED9F5" name="PA_Acesso_PA_Tela_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:39:31 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2908F7F-190D-08CD-CCF2-E31FC786E481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

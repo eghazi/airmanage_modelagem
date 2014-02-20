@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11F23B62-356F-385D-8736-9287A0B114BF" name="CA_Fornecedor_Pecas_Contato">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:12:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Fornecedor_Peca_Contato" id="56941270-B8B4-C5DE-928B-144B937D6D71">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:12:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="E0D31F20-4886-3EB0-6F79-D724F3812704">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:13:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Contato_Fornecedor</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_contato" id="F4687ED0-6A84-B789-93C8-BC9BE81B098A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:11:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5CFBFF9F-986D-AD0C-F774-5444507CF2AE</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05D7CED5-30BA-0511-C77C-CC458CB17352" referredColumn="5CFBFF9F-986D-AD0C-F774-5444507CF2AE"/>
+</associations>
+</Column>
+<Column name="FK_id_Fornecedor_Pecas" id="2CF8615D-7550-D0DF-ED49-B7DB6E13E410">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:11:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>7E09181C-A640-3286-BC1C-6A3A81F76228</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FC8917D-A06D-E643-4248-812493A95A13" referredColumn="7E09181C-A640-3286-BC1C-6A3A81F76228"/>
+</associations>
+</Column>
+<Column name="sContato" id="38D86186-7148-7830-899D-FABCF4906D9F">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:17:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="521E2BF4-AE30-03EF-633A-74A1FEB01845" name="CA_Contato_Fornecedor_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:12:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56941270-B8B4-C5DE-928B-144B937D6D71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A310CAE-AD0E-7BBA-33E5-DA3D20948739" name="CA_Fornecedor_Pecas_Contato_CA_Contato_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:11:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4687ED0-6A84-B789-93C8-BC9BE81B098A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB141DBC-BABC-09A2-BE94-D08393E57A4A" name="CA_Fornecedor_Pecas_Contato_CA_Forncedor_Pecas_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:11:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CF8615D-7550-D0DF-ED49-B7DB6E13E410"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

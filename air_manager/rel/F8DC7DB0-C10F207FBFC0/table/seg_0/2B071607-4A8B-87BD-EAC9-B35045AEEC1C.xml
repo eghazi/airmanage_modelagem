@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B071607-4A8B-87BD-EAC9-B35045AEEC1C" name="CC_Pedido_Peca">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:17:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Pedido_Peca" id="DB78F55D-6A90-8351-294E-313B9B22695B">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:18:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="4BD758BE-980D-57AC-F62B-7E5B8FDEF9EE">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:18:12 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Pedido_Peca</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Peca" id="62A86B82-AF30-A576-66F6-783E900D5E49">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:00:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CDCDB2BA-C139-940B-D133-247634454105</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AEB6002-4132-DA97-4263-5A600BFF3787" referredColumn="CDCDB2BA-C139-940B-D133-247634454105"/>
+</associations>
+</Column>
+<Column name="FK_id_Pedido" id="A85151B2-81A5-AF19-0A52-CE310EDDDBE6">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:01:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>48421FD2-6B59-4E28-D57B-3BB080CF5414</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97ADA5D8-A109-5CC3-6EB4-5203A6CA8C00" referredColumn="48421FD2-6B59-4E28-D57B-3BB080CF5414"/>
+</associations>
+</Column>
+<Column name="iQuantidade" id="F28038FB-A82F-DE1A-BB11-5744E8B6557D">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:05:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fValorCheio" id="FC102478-6EB5-0EA4-5871-591946F60131">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:05:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fDesconto" id="A2F7AF85-FADC-DE7E-43FE-003485925DC8">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:05:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fValorFinal" id="3A368EEC-68A7-6F4A-C82B-61F277081860">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:05:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBC20FAE-E5F2-919A-5A1A-8FCCFB359A97" name="CP_Pedido_Peca_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:18:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB78F55D-6A90-8351-294E-313B9B22695B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB133000-B4FA-6B66-1E14-B60D6685C2E1" name="CC_Pedido_Peca_VC_Peca_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:00:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62A86B82-AF30-A576-66F6-783E900D5E49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B3885E7-8ADE-35FA-C8D1-E5251116A1D8" name="CC_Pedido_Peca_CC_Pedido_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:01:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A85151B2-81A5-AF19-0A52-CE310EDDDBE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

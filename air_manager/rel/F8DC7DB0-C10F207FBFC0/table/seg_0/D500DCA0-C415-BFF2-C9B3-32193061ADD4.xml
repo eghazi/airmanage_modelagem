@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D500DCA0-C415-BFF2-C9B3-32193061ADD4" name="VC_Veiculo">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:55:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Aeronave" id="87C501A1-C41D-64D2-4203-5858FF6F5BAF">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:56:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="6AB11ED8-CE55-3187-E513-A45D18728FF9">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:56:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Aeronave</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="sNome" id="450176A6-C87C-D246-2D8C-0001D7BAA88A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 19:17:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CA_Prestador_Veiculo_id_Prestador_Veiculo" id="54E60B5E-50DA-2950-1810-4AB6A0962171">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:06:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>367AAE51-2211-20AE-EF30-04AFB9A11DA6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F06A3351-15DB-F9B6-8785-2133F847C082" referredColumn="367AAE51-2211-20AE-EF30-04AFB9A11DA6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3538527-09A7-6640-CA5B-043FC89A7181" name="CA_Aeronave_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:56:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87C501A1-C41D-64D2-4203-5858FF6F5BAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8F191A9-E853-017E-099A-DE1DBEBB3ECA" name="VC_Veiculo_CA_Prestador_Veiculo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:06:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54E60B5E-50DA-2950-1810-4AB6A0962171"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

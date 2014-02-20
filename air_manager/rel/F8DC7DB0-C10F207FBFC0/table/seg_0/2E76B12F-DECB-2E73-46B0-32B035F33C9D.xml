@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E76B12F-DECB-2E73-46B0-32B035F33C9D" name="CA_Prestador_Funcionario">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:58:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Prestador_Funcionario" id="E505582F-49D0-B322-0444-7B997F91D1B6">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:59:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FK_Pessoa_id_pessoa" id="9EE551E8-1F86-E255-2EF3-5ECE9CF3A17C">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:59:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A5BE4DBD-FE2F-81A4-9E7D-ACBDEEEA6052</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28787EB9-FF17-061A-7CC6-E8B4E317F3E6" referredColumn="A5BE4DBD-FE2F-81A4-9E7D-ACBDEEEA6052"/>
+</associations>
+</Column>
+<Column name="_deleted_" id="FFAFEECA-F15E-1465-C8C2-9EC0E7F0F3E5">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:59:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Funcionario_Empresa</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="CA_Prestador_Servico_id_Prestador_Servico" id="0A6736C1-88D9-B5A7-9A01-0406DD432485">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:04:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D20D0600-7610-8751-3543-68ABEC6B31BC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="207EEF63-68A5-75D4-7EB2-EEF016DC175F" referredColumn="D20D0600-7610-8751-3543-68ABEC6B31BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13C854F4-8DE2-3869-A3A9-6253F4D6CC50" name="CA_FUNCIONARIO_EMPRESA_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:59:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E505582F-49D0-B322-0444-7B997F91D1B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B14ADD2-DD7C-D345-15C9-09E87C72107D" name="CA_FUNCIONARIO_PRESTADOR_RH_Pessoa_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 12:59:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EE551E8-1F86-E255-2EF3-5ECE9CF3A17C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="391496B7-B930-F23A-3DAA-65490C2776C3" name="CA_Prestador_Funcionario_CA_Prestador_Servico_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:04:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A6736C1-88D9-B5A7-9A01-0406DD432485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

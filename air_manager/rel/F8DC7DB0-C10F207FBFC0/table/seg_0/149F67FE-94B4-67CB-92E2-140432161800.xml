@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="149F67FE-94B4-67CB-92E2-140432161800" name="CA_Cidade">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:56:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Cidade" id="776A354C-2B58-F7D8-0208-9109F43B53E2">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:57:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="25E67FE6-EC88-EFAB-8AA5-C939EB193B9A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:57:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Cidade</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_UF" id="15329FAE-2AB6-E6E7-20AE-1099287DAEBA">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:57:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DBC3699B-5C83-4542-EF6E-65E35D84C8C9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD38BF1F-DEDB-DC23-3DCF-C6AE41DBFBAB" referredColumn="DBC3699B-5C83-4542-EF6E-65E35D84C8C9"/>
+</associations>
+</Column>
+<Column name="sNome" id="EA1F5D67-242E-55DA-4024-3AAE51439023">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:57:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73F5DDF2-6B5A-5E32-29AD-C51010CD7B1A" name="CA_Cidade_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:57:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="776A354C-2B58-F7D8-0208-9109F43B53E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1166B9CB-7167-FCB6-BDF5-1C7BFF34514C" name="CA_Cidade_CA_UF_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:57:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15329FAE-2AB6-E6E7-20AE-1099287DAEBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

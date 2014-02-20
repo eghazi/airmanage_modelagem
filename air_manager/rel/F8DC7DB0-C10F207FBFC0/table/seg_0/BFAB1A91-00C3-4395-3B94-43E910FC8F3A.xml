@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFAB1A91-00C3-4395-3B94-43E910FC8F3A" name="CC_Estoque">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:42:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estoque" id="660D1AC9-8F1F-D390-255F-F6CDE5CA78E9">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:42:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="99B5C962-462C-6421-52BB-5E542698C2E1">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:42:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Estoque</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Peca" id="8ABDBF7A-641C-CCA3-C0E7-2606D6DAC3FD">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:00:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CDCDB2BA-C139-940B-D133-247634454105</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5721FD5-B8ED-FB24-7A96-A129F1451729" referredColumn="CDCDB2BA-C139-940B-D133-247634454105"/>
+</associations>
+</Column>
+<Column name="FK_id_Prestador_Servico" id="FC381668-FD6A-DBEB-AE06-95DA2168A882">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 18:25:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D20D0600-7610-8751-3543-68ABEC6B31BC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A33578C8-6F1A-8C70-3F1F-D3FB2208A7B6" referredColumn="D20D0600-7610-8751-3543-68ABEC6B31BC"/>
+</associations>
+</Column>
+<Column name="iQuantidade" id="F83F21E7-48C1-97A0-216A-971EC64E6166">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:43:10 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A64AD06-40E8-3E2D-7F52-C7FF8A92CE32" name="CC_Estoque_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 17:42:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="660D1AC9-8F1F-D390-255F-F6CDE5CA78E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C16E217-B33E-AD9B-13A8-00E1C4272CCA" name="CC_Estoque_VC_Peca_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:00:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ABDBF7A-641C-CCA3-C0E7-2606D6DAC3FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D8A7500-E9BA-383C-2DB0-E44721427E56" name="CC_Estoque_CA_Prestador_Servico_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 18:25:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC381668-FD6A-DBEB-AE06-95DA2168A882"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

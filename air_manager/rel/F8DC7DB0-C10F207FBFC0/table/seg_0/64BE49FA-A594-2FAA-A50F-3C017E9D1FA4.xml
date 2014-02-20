@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64BE49FA-A594-2FAA-A50F-3C017E9D1FA4" name="CA_Fornecedor_Veiculo_Contato">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 17:51:21 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Contato_Fornecedor_Veiculo" id="ADE8392E-0E6B-0742-924F-021F1ABFCD13">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 17:52:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="26D54424-9BDE-2133-1F95-28F3B322A2B0">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 17:52:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Contato_Fornecedor_Veiculo</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_contato" id="FEBB13FA-5C2B-970A-C98D-DED4699E67BB">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:10:51 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5CFBFF9F-986D-AD0C-F774-5444507CF2AE</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B8BEEDE-7562-67C7-4B7D-71F3A26F4702" referredColumn="5CFBFF9F-986D-AD0C-F774-5444507CF2AE"/>
+</associations>
+</Column>
+<Column name="FK_id_Fornecedor_Veiculo" id="691D32DD-21F9-CE93-40C0-FD9DB15B5279">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:12:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C17EA1EA-4D66-8422-37E6-B6D99A8B3632</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85179474-9433-0637-5629-B2E1EDFBAAB1" referredColumn="C17EA1EA-4D66-8422-37E6-B6D99A8B3632"/>
+</associations>
+</Column>
+<Column name="sContato" id="BE6590BE-25A3-0A3B-6D9D-9C76490310D7">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:18:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CB826B3-5C51-AF5A-F9F8-5CF495B138C7" name="CA_Contato_Fornecedor_Veiculo_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 17:52:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADE8392E-0E6B-0742-924F-021F1ABFCD13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2BCACF3-FEB6-C12C-F86C-E133DEAC0CA1" name="CA_Fornecedor_Veiculo_Contato_CA_Contato_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 14:10:51 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEBB13FA-5C2B-970A-C98D-DED4699E67BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3BC7F1B-677E-6DDB-290E-C76D2756F9A9" name="CA_Fornecedor_Veiculo_Contato_CA_Fornecedor_Veiculo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-30 19:12:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="691D32DD-21F9-CE93-40C0-FD9DB15B5279"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

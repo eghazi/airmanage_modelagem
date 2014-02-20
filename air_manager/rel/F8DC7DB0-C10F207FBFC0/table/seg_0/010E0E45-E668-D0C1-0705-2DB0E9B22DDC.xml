@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="010E0E45-E668-D0C1-0705-2DB0E9B22DDC" name="VC_Peca_Fornecedor_Hist">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:32:11 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Peca_Fornecedor_Hist" id="21FDA39E-3070-F7F6-E38B-D749E6A70E29">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:32:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="EAD9975E-E977-896A-55D0-6DB9D4D42613">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:32:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Peca_Fornecedor_Hist</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Peca_Fornecedor" id="47A9255F-752B-87C4-EE7B-2271DD3AE30F">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:33:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DC14824B-95DF-846A-71D3-7A1AC908DEE0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D833CB48-061E-7382-F6BE-4C1F67EE0843" referredColumn="DC14824B-95DF-846A-71D3-7A1AC908DEE0"/>
+</associations>
+</Column>
+<Column name="FK_id_Peca_Forn_Status" id="7560B804-FBF9-C5C7-9AD0-0610CACB0142">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:35:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>387CE0EF-5145-B60F-3C6F-7B15E3811772</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6D612B7-6629-4F47-965E-179366BBB7C2" referredColumn="387CE0EF-5145-B60F-3C6F-7B15E3811772"/>
+</associations>
+</Column>
+<Column name="dDataInicio" id="169E120D-E415-A316-A5BE-AD8B819EA7F9">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:33:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataFim" id="A7B0A927-ED98-2DA4-B151-936C83088C64">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:33:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sObservacao" id="49B6374E-5C3E-6D19-D4EB-88114A2F0ED0">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:55:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0934028F-DC45-EC87-E04D-389542454838" name="VC_Peca_Fornecedor_Hist_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:32:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21FDA39E-3070-F7F6-E38B-D749E6A70E29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B95EF8AB-AB6C-4EBC-FD3E-DEFAFA7FEEF7" name="VC_Peca_Fornecedor_Hist_VC_Peca_Fornecedor_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:33:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47A9255F-752B-87C4-EE7B-2271DD3AE30F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="178725FC-45AC-C44B-DC7B-42716AC7670F" name="VC_Peca_Fornecedor_Hist_VC_Peca_Forn_Status_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:35:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7560B804-FBF9-C5C7-9AD0-0610CACB0142"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

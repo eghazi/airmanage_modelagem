@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2C35216-3556-3D7B-BF0E-0A5A80E66656" name="CK_Checklist_Status">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:45:31 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Checklist_Status" id="6BA51265-F8B0-7B81-2FFF-37DACC7CE9DA">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:46:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_Checklist_Status" id="8D2B29DD-E407-55DF-A8C8-34CCCEA719AD">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:46:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sNome" id="6D2C52B0-A9EA-7847-2C07-623A3BEB25FA">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:46:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3A095BA-32FA-3581-094D-94E4834F4620" name="CK_Checklist_Status_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:46:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA51265-F8B0-7B81-2FFF-37DACC7CE9DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

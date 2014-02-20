@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="74C5542C-104C-62B5-1BA9-0EC639F1BC54" name="PA_Menu_PA_Tela_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:25:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<containerWithKeyObject>92FBEF09-02CA-BC7B-556A-4778DBF21836</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>609B5A17-BE89-47C6-E7DD-A1A787BD5964</localFKIndex>
+<keyObject>E43DB27A-5A57-F712-298B-E36FDA97D973</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

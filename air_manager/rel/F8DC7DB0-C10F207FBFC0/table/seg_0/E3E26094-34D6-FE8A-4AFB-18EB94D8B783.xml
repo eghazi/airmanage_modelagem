@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3E26094-34D6-FE8A-4AFB-18EB94D8B783" name="VC_Peca">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:57:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Peca" id="CDCDB2BA-C139-940B-D133-247634454105">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:58:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="C16C80AA-6EA2-06F8-CA35-DBB5E1A5A90E">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:58:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Peca</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FK_id_Metrica" id="5C1867DB-69D7-8945-5741-6219E0796430">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 18:46:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5E05E173-948E-46CF-27A3-3B393CC2E3A5</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="329F987B-A3EE-DB47-945F-EC373E30BF18" referredColumn="5E05E173-948E-46CF-27A3-3B393CC2E3A5"/>
+</associations>
+</Column>
+<Column name="FK_id_Veiculo_Parte" id="3FE5A5F8-A322-0114-3DC6-C0D16152ED87">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:27:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0F30921F-8B7E-4A6C-9929-759740765B74</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDF7D3C4-CAA5-504F-42CB-D1C1A505FFAF" referredColumn="0F30921F-8B7E-4A6C-9929-759740765B74"/>
+</associations>
+</Column>
+<Column name="iImpeditivo" id="5BD6C0C9-8DB1-A0C0-1C84-C5E481B65F61">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 18:44:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iVidaUtil" id="AC8F7C2C-4292-B409-0AC9-2A73A4B8A096">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 18:47:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sNome" id="9893CB7A-3B34-5137-196B-B17A75D008B9">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:27:53 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6956C13-5F54-AB85-F744-676E6446C68E" name="CA_Peca_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:58:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDCDB2BA-C139-940B-D133-247634454105"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84771964-9C0E-210F-04A1-2EB62C5C53BB" name="VC_Peca_CA_Metrica_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-29 18:46:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C1867DB-69D7-8945-5741-6219E0796430"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7869C0A0-B06D-421F-B68A-EF1507FB87B1" name="VC_Peca_VC_Veiculo_Parte_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:27:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FE5A5F8-A322-0114-3DC6-C0D16152ED87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

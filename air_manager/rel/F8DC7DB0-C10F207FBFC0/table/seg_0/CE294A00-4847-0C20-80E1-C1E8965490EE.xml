@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE294A00-4847-0C20-80E1-C1E8965490EE" name="CK_Check_Modelo">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:05:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Check_Modelo" id="BB3FC72F-38B0-42F4-E1D2-C9967A4EDE81">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:05:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="E10E6CD9-F34E-9839-2F9D-F5372831BBF2">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:05:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sNome" id="85C4A2DF-2E05-3C98-254C-1FF405308CD8">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:06:22 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="520AFFAF-B48C-7CA8-8D25-BA52ED0834CB" name="CK_Check_Modelo_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 18:05:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB3FC72F-38B0-42F4-E1D2-C9967A4EDE81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78B275EF-3129-7BA7-F966-F02873C8D854" name="PA_Permissao">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:02:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Permissao" id="BE24608B-F79E-9253-2EDF-897FAB2408FA">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:02:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="838996D5-A08C-0B05-E515-25C1018A0DDF">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:02:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>CK_PA_Permissao__deleted_</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="sNome" id="5DDFBE91-9B5D-0947-B07E-189372C28082">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:36:31 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7F18BBF-33BC-7590-5BA0-B8690E0F3567" name="PA_Permissao_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 14:02:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE24608B-F79E-9253-2EDF-897FAB2408FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F92CF43E-2F92-4B0A-0AFF-8FF301376296" name="PA_Permissao__UN">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-28 16:36:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="838996D5-A08C-0B05-E515-25C1018A0DDF"/>
+<colUsage columnID="5DDFBE91-9B5D-0947-B07E-189372C28082"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

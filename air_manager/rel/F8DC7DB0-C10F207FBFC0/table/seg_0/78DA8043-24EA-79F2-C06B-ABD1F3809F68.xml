@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78DA8043-24EA-79F2-C06B-ABD1F3809F68" name="VC_Peca_Forn_Status">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:34:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Peca_Forn_Status" id="387CE0EF-5145-B60F-3C6F-7B15E3811772">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:35:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="3D1CF0E1-3D67-A8AF-D155-D13A4FE586D2">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:35:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sNome" id="9794AE7E-8532-3074-9CAD-0782FC04A14A">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:35:22 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E222EEDE-C7F3-D001-270A-BD4338B13403" name="VC_Peca_Forn_Status_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:35:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="387CE0EF-5145-B60F-3C6F-7B15E3811772"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

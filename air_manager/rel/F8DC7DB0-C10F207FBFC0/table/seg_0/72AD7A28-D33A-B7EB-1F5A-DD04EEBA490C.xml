@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72AD7A28-D33A-B7EB-1F5A-DD04EEBA490C" name="RH_Pessoa_Historico">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:02:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Pessoa_Historico" id="CD9D87DB-7195-8A18-D493-344BCB161A73">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:02:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="_deleted_" id="E55C52AF-00A0-3080-579F-7FE21805AD15">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:02:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<constraintName>_deleted_Pessoa_Historico</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>0</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+<description>_deleted_</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="RH_Pessoa_id_pessoa" id="9CC12368-7CA8-8254-8DB6-8F17AC936DD8">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:03:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A5BE4DBD-FE2F-81A4-9E7D-ACBDEEEA6052</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1D273D9-4E9E-B9CC-BA85-0D610D87E1C4" referredColumn="A5BE4DBD-FE2F-81A4-9E7D-ACBDEEEA6052"/>
+</associations>
+</Column>
+<Column name="RH_Cargo_id_cargo" id="2FD4A038-2F70-2456-C6D1-154642E286A2">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:03:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5F787C60-BAD9-BD42-32E7-16C15EA28563</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D50D204E-7A14-992E-3B66-940FBC1949FD" referredColumn="5F787C60-BAD9-BD42-32E7-16C15EA28563"/>
+</associations>
+</Column>
+<Column name="FK_id_empresa" id="0EE17670-E33A-3FA9-650F-923DB4A79825">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:04:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D78B1C53-9029-AAC8-BAFC-ABC862AACBD4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDB33A24-DA72-A26B-2459-212D7647EB52" referredColumn="D78B1C53-9029-AAC8-BAFC-ABC862AACBD4"/>
+</associations>
+</Column>
+<Column name="dDataInicio" id="E781A7BD-A04F-3AF0-7822-82C1474A2762">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:05:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dDataFim" id="62447D11-4307-5679-FA45-3B1B90F07B3C">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:05:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sObservacao" id="45433E07-D190-3AA8-BA3B-A321923137E4">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 17:56:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFCA3135-8A65-1496-B5DE-738099531EE4" name="RH_Pessoa_Historico_PK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:02:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD9D87DB-7195-8A18-D493-344BCB161A73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F362818-1ECD-18F6-E7C2-CA34C35190A4" name="RH_Pessoa_Historico_RH_Pessoa_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:03:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CC12368-7CA8-8254-8DB6-8F17AC936DD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D945D6E5-1F8D-7843-5DD5-91FBBCE1D67F" name="RH_Pessoa_Historico_RH_Cargo_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:03:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FD4A038-2F70-2456-C6D1-154642E286A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="558D97E3-B787-9A50-584C-2AA4231AA750" name="RH_Pessoa_Historico_CA_Empresa_FK">
+<createdBy>emerson</createdBy>
+<createdTime>2014-01-31 16:04:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>air_manager</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EE17670-E33A-3FA9-650F-923DB4A79825"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
